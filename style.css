@@ -1,0 +1,15 @@
+body {
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+}
+@font-face {
+    font-family: "8bit";
+    src: url("Resources/8bitfont.ttf");
+}
+#maintitle {
+    font-family: "8bit";
+    text-align: center;
+    color:royalblue;
+    font-size: 2em;
+    padding-top: 2em;
+}
