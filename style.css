@@ -49,3 +49,11 @@ body {
         padding-bottom: 3em;
     }
 }
+#proj1{
+    padding-right: 2em;
+}
+#proj2{
+    padding-left: 2em;
+}
+#proj1, #proj2 {
+}
