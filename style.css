@@ -33,3 +33,19 @@ body {
 #buttons {
     text-align: center;
 }
+#recentProjects {
+    padding-top: 4em;
+    text-align: center;
+}
+
+/*Making the layout mobile firnedly*/
+@media screen and (max-width: 420px) {
+    #maintitle {
+        font-family: "8bit";
+        text-align: center;
+        color:black;
+        font-size: 5em;
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+}
