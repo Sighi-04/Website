@@ -17,6 +17,5 @@ function changeData(proj1, proj2){
     const pj1=document.getElementById("proj1")
     const pj2=document.getElementById("proj2")
     pj1.innerHTML=proj1
-    pj2.innerHTML={
-    }
+    pj2.innerHTML=proj2
 }
