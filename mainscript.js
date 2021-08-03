@@ -1,13 +1,15 @@
 async function getData(){
     try {
-        const response=await fetch("https://api.github.com/users/Sighi-04/repos")
+        //Fetches the list of repositories, sorting by last updated
+        const response=await fetch("https://api.github.com/users/Sighi-04/repos?sort=updated")
+        //Renders the response body in json format
         const result = await response.json()
+        //Logs to console every repository's name
         console.log("I tuoi respositoy sono:")
         await result.forEach(element => {
             console.log(element.name)
-        });
-        await console.log(result)
-        changeData(result[0].name, result[1].name)
+        })
+        //Fetches the commits for the latest 
     }
     catch{
         alert("Impossibile ottenere i progetti recenti")
