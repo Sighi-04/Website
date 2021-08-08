@@ -39,6 +39,19 @@ body {
     text-align: center;
 }
 
+#proj1, #proj2 {
+    display: inline-block;
+    border: solid black 2px;
+    width: 45%;
+    margin: 1em 1em;
+    border-radius: 10px;
+    padding: 1em 1em;
+}
+
+
+
+
+
 /*Making the layout mobile firnedly*/
 @media screen and (max-width: 420px) {
     #maintitle {
@@ -49,10 +62,4 @@ body {
         padding-top: 2em;
         padding-bottom: 3em;
     }
-}
-#proj1{
-    padding-right: 2em;
-}
-#proj2{
-    padding-left: 2em;
 }

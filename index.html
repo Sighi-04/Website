@@ -12,26 +12,36 @@
                 <h2>I'm Filippo Andrea Sighinolfi, a 16 year old studying software development.</h2>
             </div>
             <div id="buttons">
-                <span id="gitButton">
-                    <a href="https://github.com/Sighi-04" target="_blank">My GitHub</a>                    
-                </span>
-                <span id="mailButton">
-                    <img src="Resources/mailLogo.svg">
-                    <a href="mailto:filipposighinolfi@protonmail.com" target="_blank">Contact Me</a>
-                </span>
+                <a href="https://github.com/Sighi-04" target="_blank">
+                    <span id="gitButton">
+                        <img src="Resources/ghLogo.svg">
+                        My GitHub       
+                    </span>
+                    
+                </a>
+                
+                <a href="mailto:filipposighinolfi@protonmail.com" target="_blank">
+                    <span id="mailButton">
+                        <img src="Resources/mailLogo.svg">
+                        Contact Me
+                    </span>
+                </a>
             </div>
-            <button onclick="getData()">TEST</button>
+            <button onclick="getReposInfo()">TEST</button>
             <div id="recentProjects">
                 <h1>Recent Projects</h1>
-                <span id="proj1">
-                    Project 1 Name<br>
-                    Last commit: 2 days ago<br>
-                    Last commit message: added game history feature<br>
-                </span>
-                <span id="proj2">
-                    Recent project 2 goes here
-                    esplosi male
-                </span>
+                <div id="proj1">
+                    <div id="proj1Name">Project 1 Name</div>
+                    <div id="proj1Desc">Project 1 short description</div>
+                    <div id="proj1CommitMessage">Project 1 commit message</div>
+                    <div id="proj1CommittedAt">Committed: 6 hours ago</div>
+                </div>
+                <div id="proj2">
+                    <div id="proj2Name">Project 2 Name</div>
+                    <div id="proj2Desc">Project 2 short description</div>
+                    <div id="proj2CommitMessage">Project 2 commit message</div>
+                    <div id="proj2CommittedAt">Committed: 6 hours ago</div>
+                </div>
             </div>
         </div>
         <script src="mainscript.js"></script>
