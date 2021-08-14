@@ -17,14 +17,14 @@ async function getCommitsInfo(proj1, proj2){
     project1 = {
         "Name": proj1.name,
         "Description": proj1.description,
-        "CommittedAt": null,
-        "CommitMessage": null
+        "CommitMessage": null,
+        "CommittedAt": null        
     }
     project2 = {
         "Name": proj2.name,
         "Description": proj2.description,
-        "CommittedAt": null,
-        "CommitMessage": null
+        "CommitMessage": null,
+        "CommittedAt": null        
     }
     try {
         //Fetches the first project's commit info
@@ -41,7 +41,7 @@ async function getCommitsInfo(proj1, proj2){
         project2.CommitMessage= await result.commit.message
         project2.CommittedAt= await result.commit.author.date
 
-        changeData(project1, project2)
+        await changeData(project1, project2)
         
     }
     catch {
@@ -51,12 +51,12 @@ async function getCommitsInfo(proj1, proj2){
 }
 
 function changeData(proj1, proj2) {
-    projects = ["proj1", "proj2"]
-    details = ["Name", "Desc", "CommitMessage", "CommittedAt"]
-    projects.forEach(project => {
+    let temp = null
+    details = ["Name", "Description", "CommitMessage", "CommittedAt"]
         details.forEach(detail => {
-            let temp = document.getElementById(project+detail)
-            temp.innerHTML = project1.detail
-        })
-    });
+            temp = document.getElementById("proj1"+detail)
+            temp.innerHTML=proj1[detail]
+            temp = document.getElementById("proj2"+detail)
+            temp.innerHTML=proj2[detail]
+        });
 }
