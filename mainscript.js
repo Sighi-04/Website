@@ -51,6 +51,7 @@ async function getCommitsInfo(proj1, proj2){
 }
 
 function changeData(proj1, proj2) {
+    console.log(proj2)
     let temp = null
     details = ["Name", "Description", "CommitMessage", "CommittedAt"]
         details.forEach(detail => {
